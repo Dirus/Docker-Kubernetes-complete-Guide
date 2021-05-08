@@ -1,0 +1,29 @@
+1. Creating and running a container from an image
+	docker run <image name>
+
+2. Creating and running a container from an image and exectuing an override command
+	docker run <image name> <command>
+3. List all running containers
+	docker ps
+4. List all containers
+	docker ps -a
+Note : docker run = docker create + docker start
+5. Create a container
+	docker create <image name>
+6. Start an existing container
+	docker start <container_ID>
+	[with logs] -> docker start -a <container_ID> 
+7. Delete all containers
+	docker system prune
+8. Get logs from a container
+	docker logs <container_id>
+9. Stop a running container
+	docker stop <container_id> --> 10s wait period
+	docker kill <container_id> --> instantly kill all processes
+10. Execute an additional command in a container
+	docker exec -it <container_id> <command>
+	note --> -it tag allow us to provide input to the container
+11. Remove all containers
+	docker rm -vf $(docker ps -a -q)
+12. Getting a command prompt in a container
+	docker exec -it <container_id> sh

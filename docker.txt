@@ -1,0 +1,28 @@
+1. Install Docker
+The Docker docs suggest setting up a Docker repository to install and update from.
+This is where you should start: https://docs.docker.com/install/linux/docker-ce/ubuntu/#set-up-the-repository
+
+2. Login to the Dockerhub
+In order to push and pull images, you will need to login to the Dockerhub. In your terminal, run docker login and then enter your Dockerhub account's username and password.
+
+3. Test Docker installation
+After completing the installation steps, test out Docker by running sudo docker run hello-world. This should download and run the test container printing "hello world" to your console.
+
+4. Installing Docker Compose
+https://docs.docker.com/compose/install/#install-compose
+
+5. Testing Docker Compose
+After completing, test your installation by running docker-compose -v. This should print the version and build numbers to your console.
+
+6. Run without Sudo
+Follow these instructions to run Docker commands without sudo:
+https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user
+
+To create the docker group and add your user:
+
+Create the docker group.
+
+ sudo groupadd docker
+Add your user to the docker group.
+
+ sudo usermod -aG docker $USER
