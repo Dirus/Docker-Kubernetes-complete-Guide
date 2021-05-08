@@ -15,7 +15,7 @@ CMD [ "redis-server" ]
 
 ## Process:
 
-![](/home/deepesh/Documents/Docker&Kubernetes-complete-Guide/images/Screenshot from 2021-05-08 11-56-03.png)
+<img src="./images/Screenshot from 2021-05-08 11-56-03.png" style="zoom:100%;" />
 
 ## Tagging an image:
 
