@@ -15,7 +15,7 @@ CMD [ "redis-server" ]
 
 ## Process:
 
-<img src="/home/deepesh/Pictures/Screenshot from 2021-05-08 11-56-03.png"  />
+![](/home/deepesh/Documents/Docker&Kubernetes-complete-Guide/images/Screenshot from 2021-05-08 11-56-03.png)
 
 ## Tagging an image:
 
@@ -27,19 +27,23 @@ docker build -t [docker-id]/[name]:[version] .
 
 ## Copy command inside dockerfile
 
-<img src="/home/deepesh/Pictures/Screenshot from 2021-05-08 15-16-24.png" style="zoom:50%;" />
+<img src="./images/Screenshot from 2021-05-08 15-16-24.png" style="zoom:50%;" />
 
 `COPY ./ ./`
 
 ## Port Mapping
 
-<img src="/home/deepesh/Pictures/Screenshot from 2021-05-08 15-20-11.png" style="zoom: 50%;" />
+<img src="./images/Screenshot from 2021-05-08 15-20-11.png" style="zoom:67%;" />
 
 `docker run -p 8080:8080 simpleweb`
 
 ## WORKDIR
 
-<img src="/home/deepesh/Pictures/Screenshot from 2021-05-08 15-37-44.png" style="zoom:50%;" />
+<img src="./images/Screenshot from 2021-05-08 15-37-44.png" style="zoom:67%;" />
 
 `WORKDIR /usr/app`
+
+## Docker-compose
+
+<img src="./images/Screenshot from 2021-05-08 18-47-39.png" style="zoom: 80%;" />
 
