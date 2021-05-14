@@ -50,3 +50,22 @@ docker build -t [docker-id]/[name]:[version] .
 
 
 <img src="./images/Screenshot from 2021-05-14 11-38-14.png" style="zoom:80%;" />
+
+```yaml
+version: '3'
+
+services: 
+    redis-server:
+        image: 'redis'
+
+    node-app:
+        restart: always
+        build: .
+        ports: 
+            - "8081:8081"
+```
+
+## Automatic Restart policies
+
+<img src="./images/Screenshot from 2021-05-14 11-59-04.png" style="zoom:67%;" />
+
